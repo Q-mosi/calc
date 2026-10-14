@@ -1,0 +1,115 @@
+/* Базовые настройки шрифта и фона */
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  margin: 0;
+  padding: 0;
+}
+
+/* Вкладки навигации по графикам */
+.tab-btn {
+  border-bottom: 3px solid transparent;
+  color: #475569;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tab-btn:hover {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.tab-btn.active {
+  border-bottom: 3px solid #2563eb;
+  color: #1d4ed8;
+  font-weight: 600;
+  background-color: #eff6ff;
+}
+
+/* Кнопки выбора плана мероприятий p1, p2, p3 */
+.plan-btn {
+  border-color: #cbd5e1;
+  background-color: #ffffff;
+  color: #334155;
+  cursor: pointer;
+}
+
+.plan-btn:hover {
+  background-color: #f8fafc;
+}
+
+.plan-btn.active-plan {
+  border-color: #2563eb;
+  background-color: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.3);
+}
+
+/* Контейнеры фиксированной высоты для Chart.js */
+.chart-wrapper-lg {
+  position: relative;
+  height: 420px;
+  width: 100%;
+}
+
+.chart-wrapper-md {
+  position: relative;
+  height: 360px;
+  width: 100%;
+}
+
+.chart-wrapper-sm {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+/* Поля ввода чисел */
+input[type="number"] {
+  font-variant-numeric: tabular-nums;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Карточки показателей KPI */
+.kpi-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+/* Таблицы данных */
+.data-table th,
+.data-table td {
+  white-space: nowrap;
+}
+
+/* Кастомный скроллбар для списков параметров и таблиц */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
